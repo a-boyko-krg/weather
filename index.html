@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Weather</title>
    <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -13,6 +13,16 @@
    <div class="container">
       <div class="widget_inner">
          <div class="city"></div>
+         <div class="date-container">
+            <div class="second" id="second">12</div>
+            <div class="time" id="time">
+                           12:30 
+            </div>
+            <div class="date" id="date">
+               Понедельник, 24 Мая
+            </div>
+         </div>
+       
          <img class="icon" src="">
          <div class="weather__up">
             <div class="temp"></div>
@@ -21,26 +31,27 @@
          <div class="weather__down">
             <dl class="options">
                <div class="weather__item">
-                  <dd>Ветер</dd>
+                  <dd><span class="icon-wind"></span> Ветер</dd>
                   <dt class="speed"></dt>
                </div>
                <div class="weather__item">
-                  <dd>Давление</dd>
+                  <dd><span class="icon-pressure"></span> Давление</dd>
                   <dt class="pressure"></dt>
                </div>
                <div class="weather__item">
-                  <dd>Влажность</dd>
+                  <dd><span class="icon-humidity"></span> Влажность</dd>
                   <dt class="humidity"></dt>
                </div>
                <div class="weather__item">
-                  <dd>Облачность</dd>
+                  <dd><span class="icon-cloud"></span> Облачность</dd>
                   <dt class="clouds"></dt>
                </div>
             </dl>
          </div>
       </div>
    </div>
-   <script src="./js/app.js"></script>
+   <!-- <script src="./js/app.js"></script> -->
+   <script src="./js/index.js"></script>
 </body>
 
 </html>
